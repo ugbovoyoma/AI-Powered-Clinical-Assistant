@@ -136,8 +136,7 @@ RAG_SYSTEM = (
 )
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
-os.environ["OPENROUTER_API_KEY"]  = "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"
-
+# API key loaded from .env file via load_dotenv() at top of file
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 if not OPENROUTER_API_KEY:
